@@ -1,34 +1,54 @@
-<!DOCTYPE html> 
-<html lang="fr">
-<head> 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carte Profil</title>
-<link rel="stylesheet" href="style.css">
-</head> 
-<body> 
-    <div class="card"> 
-        <div class="card-header"> 
-            <img src="./img/20311200.webp" alt="Photo" class="profile-img"> 
-        </div> 
-        <div class="card-body"> 
-            <h2 class="name">Marie Dubois</h2> 
-            <p class="job">Développeuse Web</p> 
-            <p class="bio">Passionnée par le développement front-end...</p> 
-            <div class="stats"> 
-                <div class="stat"> 
-                    <span class="stat-number">127</span> 
-                    <span class="stat-label">Projets</span> 
-                </div> <div class="stat"> <span class="stat-number">3.5k</span> 
-                    <span class="stat-label">Followers</span> 
-                </div> 
-                <div class="stat"> 
-                    <span class="stat-number">892</span> 
-                    <span class="stat-label">Following</span> 
-                </div> 
-            </div> 
-            <a href="mailto:mariedubois@gmail.com" class="btn">Me Contacter</a> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte Profil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card-container"> 
+        
+        <div class="controls">
+            <button id="btn-square">Header Carré</button>
+            <button id="btn-rounded">Header Arrondi</button>
         </div>
-     </div>
+
+        <div class="card">
+            
+            <div class="card-header">
+                <input type="file" id="file-upload" accept="image/*" style="display: none;">
+                
+                <label for="file-upload">
+                    <img src="./img/20311200.webp" alt="Photo de profil de Marie Dubois" class="profile-img" id="editable-img">
+                </label>
+            </div>
+            
+            <div class="card-body">
+                <h2 class="name">Marie Dubois</h2>
+                <p class="job">Développeuse Web</p>
+                <p class="bio">Passionnée par le développement front-end...</p>
+                
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-number">127</span>
+                        <span class="stat-label">Projets</span>
+                    </div> 
+                    <div class="stat"> 
+                        <span class="stat-number">3.5k</span>
+                        <span class="stat-label">Followers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">892</span>
+                        <span class="stat-label">Following</span>
+                    </div>
+                </div>
+                
+                <a href="mailto:mariedubois@gmail.com?subject=Contact%20suite%20à%20votre%20profil" class="btn">Me Contacter</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
